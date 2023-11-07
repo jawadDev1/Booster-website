@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600;700;800&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+
+:root {
+    --brand: #B33030;
+    --body: #606060;
+    --dark: #19282F;
+    --border-radius: 4px;
+    --shadow: 0px 4px 60px rgba(0, 0, 0, 0.30);
+}
+
+html{
+    scroll-padding-top: 3rem;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden !important;
+}
+
+.custom-card{
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.custom-card:hover{
+    box-shadow: var(--shadow);
+    transform: translateY(-6px);
+    background: white;
+    transition: all .4s ease;
+    border: none;
+}
+
+.brand-color-heading{
+    color: var(--brand);
+}
+
+.section-intro h2{
+    font-weight: 600;
+    font-size: 2.6rem;
+}
+
+.section-intro p{
+    width: 50%;
+}
+
+.brand-btn{
+    background: var(--brand);
+    border-radius: 4px;
+    color: white;
+    margin-top: .8rem;
+}
+.brand-btn:hover{
+    background: var(--brand);
+}
+
+/* ***************** NAVBAR **************************************** */
+.navbar .nav-item .nav-link{
+    text-transform: uppercase;
+}
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active{
+    color: var(--brand);
+}
+
+.navbar{
+    box-shadow: var(--shadow);
+}
+
+.navbar-toggler{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* ***************** HOME **************************************** */
+.home{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/cover.jpg");
+    min-height: 90vh;
+    background-attachment: fixed;
+}
+.bg-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home h1{
+    font-size: 5rem;
+}
+
+.home .input-group .form-control{
+    box-shadow: none;
+    border: none;
+    padding: .6rem;
+    background: rgba(255, 255, 255, 0.199);
+    color: white;
+}
+
+
+.home .input-group .form-control::placeholder{
+    color: white;
+}
+
+.home .input-group .input-group-text{
+    background: var(--brand);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.home .input-group .input-group-text:hover{
+    transform: scale(1.1);
+}
+
+/* ***************** SERVICES **************************************** */
+
+.services .row .col-lg-4{
+    transition: all .4s ease;
+}
+
+.services i{
+    font-size: 2.5rem;
+    background: var(--brand);
+    padding: 1rem 1.1rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.services h5:hover{
+    cursor: pointer;
+    color: var(--brand);
+
+}
+
+
+/* ***************** CTA **************************************** */
+.cta{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/cover2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    color: white;
+}
+
+/* ***************** PROJECTS **************************************** */
+.projects .img-wrapper{
+    height: 100%;
+}
+
+
+.projects .img-wrapper img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects .img-wrapper button{
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .4s ease;
+    opacity: 0;
+}
+
+.projects .img-wrapper:hover button{
+    top: 50%;
+    opacity: 1;
+    transition: all .4s ease;
+}
+
+.projects .img-wrapper:hover img{
+    filter: blur(1px);
+}
+
+
+/* ***************** TESTIMONIALS **************************************** */
+.testimonials{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/cover3.jpg");    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    color: white;
+}
+
+.testimonials .carousel-item .carousel-inner-inner{
+    width: 60%;
+    border: 1px solid rgba(255, 255, 255, 0.171);
+    border-radius: 5px;
+    padding: 2.5rem 2rem;
+}
+.testimonials .carousel-item .carousel-inner-inner .stars{
+    color: orange;
+}
+
+.testimonials .carousel-item  .customer img{
+    border-radius: 50%;
+}
+
+/* ***************** TEAM **************************************** */
+.team .team-member .member-img img{
+    filter: grayscale(100%);
+    transition: all .4s ease;
+}
+
+.team .team-member .icons{
+    bottom: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.team .team-member .icons i{
+    background: white;
+    color: red;
+    font-size: 25px;
+    padding: .2rem;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.team .team-member .member-img{
+    overflow: hidden;
+
+}
+.team .team-member:hover .member-img >img{
+    filter: grayscale(0);
+    transform: scale(1.2);
+    transition: all .4s ease;
+}
+.team .team-member:hover .icons{
+    opacity: 1;
+    transition: all .4s ease;
+}
+.team .team-member .icons i:hover{
+    cursor: pointer;
+    background: var(--brand);
+    color: white;
+}
+
+/* ***************** ANOTHER CTA **************************************** */
+.another-cta{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/cover3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    color: white;
+}
+.another-cta h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.another-cta h6{
+    margin-top: .4rem;
+}
+.another-cta .underline{
+    height: 2px;
+    width: 50px;
+    background-color: var(--brand);
+    margin: auto;
+
+}
+
+/* ***************** BLOG **************************************** */
+.blog .row .col-lg-4{
+    transition: all .4s ease;
+}
+
+/* ***************** FOOTER **************************************** */
+.footer{
+    overflow-x: hidden;
+}
+.footer-box{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/cover3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    color: white;
+}
+
+.footer-box .footer-left .icons i{
+    background: white;
+    color: red;
+    font-size: 25px;
+    padding: .2rem;
+    transition: all .4s ease;
+    cursor: pointer;
+    margin: .5rem;
+}
+.footer-box .footer-left .icons i:hover{
+    background: var(--brand);
+    color: white;
+}
+
+.footer-box .footer-right h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.footer-box .footer-right li{
+    list-style: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.footer-box .footer-right li:hover{
+    color: var(--brand);
+}
+
+.footer-bottom{
+    background: var(--brand);
+    color: white;
+    padding: .8rem 1.3rem;
+}
+

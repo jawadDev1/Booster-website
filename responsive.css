@@ -1,0 +1,36 @@
+@media (max-width: 768px){
+    .home .input-group {
+        width: 75% !important;
+    }
+    .section-intro p{
+        width: 85%;
+    }
+    .section-intro h2{
+        font-size: 2.6rem;
+    }
+    
+    .home h1{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .testimonials .carousel-item .carousel-inner-inner{
+        width: 100%;
+        padding: 01rem 1.5rem;
+    }
+    .carousel-control-prev{
+        margin-left: -3.5rem;
+    }
+    .carousel-control-next{
+        margin-right: -3.5rem;
+    }
+
+    .contact-form{
+        display: flex;
+        order: 2;
+    }
+    .map{
+        display: flex;
+        order: 1;
+    }
+
+}
